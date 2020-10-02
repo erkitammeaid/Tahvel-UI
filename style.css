@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* VARIABLES */
+
+:root {
+    --very-light-gray: #F7FAFC;
+    --medium-gray: #E2E8F0;
+    --darker-gray: #8B9BB0;
+
+    --border-radius-4: 4px;
+}
+
+/* RESETS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* GLOBAL STYLES */
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: var(--very-light-gray);
+    height: 5.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: baseline;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    margin-right: 1rem;
+}
+
+.header-profile-wrapper {
+    background-color: var(--medium-gray);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-radius-4);
+}
+
+.header-profile-wrapper svg {
+    margin-left: 1rem;
+}
+
+.profile-name-placeholder {
+    font-weight: 900;
+}
+
+/* HEADER LINKS SECTION */
+
+.links-section {
+    background-color: var(--very-light-gray);
+    position: sticky;
+    top: 5.8rem;
+    width: 100%;
+}
+
+.links-wrapper {
+    display: flex;
+    padding: 1rem 0rem;
+    justify-content: space-evenly;
+}
+
+.header-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.header-link:hover {
+    color: var(--darker-gray);
+}
+
+/* WEEK RAPORT SECTION */
+
+.week-raport-section {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.week-raport-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.week-raport-wrapper p {
+    font-weight: 500;
+    color: var(--darker-gray);
+}
+
+.week-raport-wrapper p:nth-child(2) {
+    text-align: right;
+}
+
+/* DAYS SECTION */
+
+.days-section {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.days-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.monday-wrapper,
+.tuesday-wrapper {
+    background-color: var(--medium-gray);
+    padding: .5rem;
+    border-radius: var(--border-radius-4);
+}
+
+.tuesday-wrapper {
+    opacity: 0.5;
+    text-align: right;
+}
+
+.monday-wrapper p:nth-child(1) {
+    font-weight: 900;
+}
+
+.tuesday-wrapper p:nth-child(1) {
+    font-weight: 900;
+}
