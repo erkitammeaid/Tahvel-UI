@@ -7,6 +7,11 @@
     --medium-gray: #E2E8F0;
     --darker-gray: #8B9BB0;
 
+    --lesson-card-1: #FF7C00;
+    --lesson-card-2: #8DA9C4;
+    --lesson-card-3: #3F88C5;
+    --lesson-card-4: #69DC9E;
+
     --border-radius-4: 4px;
 }
 
@@ -80,8 +85,9 @@ header {
 .links-section {
     background-color: var(--very-light-gray);
     position: sticky;
-    top: 5.8rem;
+    top: 5.7rem;
     width: 100%;
+    z-index: 1000;
 }
 
 .links-wrapper {
@@ -153,4 +159,87 @@ header {
 
 .tuesday-wrapper p:nth-child(1) {
     font-weight: 900;
+}
+
+/* Timetable styles */
+
+.timetable-section {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.timetable-wrapper {
+    display: flex;
+}
+
+.number-rows {
+    display: grid;
+    grid-template-rows: repeat(9, 100px);
+    border-right: 3px solid var(--darker-gray);
+    padding-right: 1rem;
+    gap: .5rem;
+}
+
+.number-rows {
+    font-size: 2.9rem;
+    font-weight: 900;
+    color: var(--darker-gray);
+    opacity: 0.5;
+}
+
+.lesson-card-wrapper {
+    padding-left: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(9, 100px);
+    gap: .5rem;
+}
+
+.lesson-card {
+    background-color: var(--lesson-card-1);
+    width: 100%;
+    border-radius: var(--border-radius-4);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lesson-card .main-content p:nth-child(1) {
+    font-weight: 700;
+    color: white;
+}
+
+.lesson-card .main-content p:nth-child(2) {
+    font-weight: 200;
+    color: white;
+    opacity: 0.8;
+}
+
+.lesson-card .secondary-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lesson-card .secondary-content p {
+    color: white;
+}
+
+.lesson-card:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.lesson-card:nth-child(2) {
+    background-color: var(--lesson-card-2);
+}
+
+.lesson-card:nth-child(3) {
+    background-color: var(--lesson-card-3);
+}
+
+.lesson-card:nth-child(4) {
+    grid-row-start: 6;
+    grid-row-end: 9;
+    background-color: var(--lesson-card-4);
 }
