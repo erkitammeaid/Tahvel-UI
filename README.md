@@ -17,3 +17,7 @@ Kuressaare Ametikool Projekt 2020
 - Nähtavad on aint need päevad, kus on ka reaalsed tunnid. Ei kuva üleliigselt tühja ala.
 - Kas tunnikaart peab olema 45 minutit, või võib olla ka poolteist tundi.
 - Implementeerime Dark Mode.
+
+
+Lingid:
+https://www.figma.com/file/PNpnwqmn4XWvROyaY6I8Rl/tunniplaan?node-id=0%3A1
