@@ -21,5 +21,7 @@ Kuressaare Ametikool Projekt 2020
 
 Lingid:
 https://www.figma.com/file/PNpnwqmn4XWvROyaY6I8Rl/tunniplaan?node-id=0%3A1
+
 https://github.com/erkitammeaid/Tahvel-UI
+
 https://tahvel.netlify.app/
